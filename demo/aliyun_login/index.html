@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="login-form-container">
+        <div class="tab-container">
+            <div id="qr-code-login-tab-item" class="tabs-item active" onclick="onQrCodeLoginTabClick()">
+                <img />
+                <span>扫码登录</span>
+            </div>
+            <div id="account-password-login_tab_item" class="tabs-item" onclick="onAccountPasswordLoginTabClick()">
+                <img />
+                <span>账号密码登录</span>
+            </div>
+        </div>
+        <div id="qr-code-login-content" class="content" style="display: flex">
+            <div class="qr-code-text-wrap">
+                <div class="qr-code-text">
+                    扫码后点击“确认授权”，即可完成账号绑定及登录
+                </div>
+                <div class="qr-code-text">
+                    支持扫码登录的APP:
+                </div>
+            </div>
+            <div class="app-icon-wrapper">
+                <img />
+                <span>支付宝APP</span>
+                <img style="margin-left: 25px;"/>
+                <span>钉钉APP</span>
+            </div>
+            <img src="./qr_code_large.png" class="qr-code-large-img" />
+            <a href="https://account.aliyun.com/register/qr_register.html" target="_top" class="register-link">免费注册</a>
+        </div>
+        <div id="account-password-login-content" class="content" style="display: none">
+            <div class="login-form">
+                <div class="corner-icon-view">
+                    <div class="master-login-title">
+                        密码登录
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="邮箱/会员名/8位ID" autocapitalize="off">
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="请输入登录密码" autocapitalize="off">
+                </div>
+                <button class="login-button" type="submit">登录</button>
+                <div class="login-block-wrapper">
+                    <a href="" target="_blank" class="">忘记密码</a>
+                    <a href="" target="_blank" class="">忘记会员名</a>
+                    <a href="" target="_blank" class="">免费注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="third-party-login-wrap">
+            <div class="third-party-login">
+                <div class="third-party-login-text">其它登录方式</div>
+                <a href="" class="third-party-login-link"><img /></a>
+                <a href="" class="third-party-login-link"><img /></a>
+                <a href="" class="third-party-login-link"><img /></a>
+                <a href="" class="third-party-login-link"><img /></a>
+                <a href="" class="third-party-login-link"><img /></a>
+            </div>
+            <div class="ram-login">
+                <a href="" class="ram-login-link">RAM用户登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
