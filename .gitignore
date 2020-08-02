@@ -1,2 +1,7 @@
 _book
 node_modules
+.idea
+demo/.idea
+idea
+demo/idea
+demo/01/.idea
