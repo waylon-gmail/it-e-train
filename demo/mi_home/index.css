@@ -23,16 +23,6 @@
   margin-right: 15px;
 }
 
-
-.top-nav-menu {
-  position: absolute;
-  display: none;
-  background-color: red;
-  width: 100vw;
-  top: 100px;
-  height: 200px;
-}
-
 .top-nav-item {
   display: flex;
   justify-content: center;
@@ -42,7 +32,50 @@
   height: 100%;
 }
 
-#mi-phone-nav-item:hover #mi-phone-nav-menu {
+.top-nav-menu {
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FFFFFF;
+  top: 150px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
+}
+
+.top-nav-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-nav-menu-item-title {
+  color: #2a2a2a;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.top-nav-menu-item-sub-title {
+  color: #f37b48;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.top-menu-item-line {
+  background-color: #f3f3f3;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1px;
+  height: 110px;
+}
+
+#mi-phone-nav-item #mi-phone-nav-menu {
+  display: flex;
+  animation: top-nav-menu-height-animation 0.3s;
+}
+
+#red-mi-phone-nav-item:hover #red-mi-phone-nav-menu {
   display: flex;
   animation: top-nav-menu-height-animation 0.3s;
 }
